@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-MAINTAINER Jochen Schalanda <jochen+docker@schalanda.name>
+MAINTAINER Jan Doberstein <jd@jalogis.ch>
 
 ENV GRAYLOG_VERSION 2.4.6
 ENV GRAYLOG_URL_BASE https://packages.graylog2.org/releases/graylog
@@ -12,7 +12,7 @@ ARG VERSION
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="Graylog Alpine Docker Image" \
-      org.label-schema.description="Official Graylog Docker image based on Alpine Linux" \
+      org.label-schema.description="Graylog Docker image based on Alpine Linux" \
       org.label-schema.url="https://www.graylog.org/" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/joschi/docker-graylog-alpine" \
